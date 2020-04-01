@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Site Arquitetura</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css"> <!--Folha de estilo geral-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!--Estilo das fontes awesome-->
+</head>
+<body>
+<header class="header">
+	<div class="logo">
+		<img src="img/logo%20arquitetura.png" alt="Logo">
+	</div>
+	<div class="nav">
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#">Vídeos</a></li>
+			<li><a href="#">Projetos</a></li>
+			<li><a href="#">Referências</a></li>
+			<li><a href="#">Produtos</a></li>
+			<li><a href="#">Escritórios</a></li>
+			<li><a href="#">Contatos</a></li>
+		</ul>
+	</div>
+	<div class="btn-more-menu">
+		<a href=""><img src="img/btn%20mobile.png" alt=""></a>
+	</div>
+</header>
+
+<section class="main">
+	<div class="main-slider">
+		<div class="text">
+			<h1>ARQUITETURAS</h1>
+			<h2>MODERNAS</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the industry's<br>standard dummy text ever since the 2000s.</p>
+			<button>VER PROJETOS</button>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+        	<!-- Slides -->
+        		<div class="swiper-slide">
+        			<img src="img/casa-ack21.jpg" alt="Arquitetura Moderna">
+        		</div>
+        		<div class="swiper-slide">
+        			<img src="img/ft.jpg" alt="Arquitetura Moderna">
+        		</div>
+        		<div class="swiper-slide">
+        			<img src="img/lluvia3630.jpg" alt="Arquitetura Moderna">
+        		</div>
+    		</div>
+    		<div class="nav-slider">
+				<div class="btn-prev"><img src="img/prev.svg" alt=""></div>
+				<div class="btn-next"><img src="img/next.svg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<div class="main-more">
+		<div class="area-videos">
+		<div class="box-video">
+			<img src="img/casa-ack21.jpg" alt="">
+			<div class="play">
+				<img src="img/play.svg" alt="">
+			</div>
+		</div>
+		<div class="box-video">
+			<img src="img/ft.jpg" alt="">
+			<div class="play">
+				<img src="img/play.svg" alt="">
+			</div>
+		</div>
+		<div class="box-video">
+			<img src="img/lluvia3630.jpg" alt="">
+			<div class="play">
+				<img src="img/play.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="down-slider">
+		<img src="img/bottom.svg" alt="">
+	</div>
+	</div>
+	
+</section>
+<script>
+	window.onload = function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+	autoplay: true,
+    loop: true,
+	navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+  })
+};
+</script>
+<script src="js/swiper.min.js"></script>
+<script src="js/script.js"></script><!--Script Geral-->
+</body>
+</html>
